@@ -1,19 +1,17 @@
 [[source]]
-name = "pypi"
+
 url = "https://pypi.org/simple"
 verify_ssl = true
-
-[dev-packages]
-
-[packages]
-
-[requires]
-python_version = "3.5"
 
 [packages]
 
 Flask = "*"
 
-[packages]
-
 fpdf = "*"
+
+[requires]
+python_version = "3.5"
+
+[
+
+

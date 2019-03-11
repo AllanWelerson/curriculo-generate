@@ -6,12 +6,10 @@ verify_ssl = true
 [packages]
 
 Flask = "*"
-
 fpdf = "*"
 
 [requires]
 python_version = "3.5"
 
-[
 
 

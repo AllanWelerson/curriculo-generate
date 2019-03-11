@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, make_response
 from fpdf import FPDF
+import os
 from CurriculoPDF import gerarPDF, dadosPessoais
 import Curriculo
 
@@ -21,4 +22,8 @@ def gerarPdf():
     response.headers.set('Content-Type', 'application/pdf')
     return response
 
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
 

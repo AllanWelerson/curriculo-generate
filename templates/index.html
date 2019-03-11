@@ -4,55 +4,10 @@
     <meta charset="UTF-8">
     <title>Curriculo Generate</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <style>
-
-        body{
-            background-color: #dfe4ea;
-        }
-
-        .jumbotron.banner{
-            background-color: #30336b ;
-            color: #dff9fb !important;
-            text-align: center;
-        }
-
-        .sticky-bottom{
-            background-color: #30336b ;
-            color: #dff9fb !important;
-            text-align: center;
-            padding: 40px;
-            margin-top: 40px;
-        }
-
-        .subtitle{
-            text-align: center;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin: 20px 0;
-            padding: 10px;
-        }
-
-        h5{
-            margin: 10px 0;
-            border-top: 1px solid #ccc;
-            border-bottom: 1px solid #ccc;
-            padding: 10px 10px;
-            text-align: center;
-            border-radius: 10px;
-        }
-
-        .btn-gerar{
-            margin: 20px;
-            padding: 10px;
-            font-size: 20px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
 
 </head>
 <body>
-
 
     <div class="jumbotron banner">
 
@@ -69,8 +24,6 @@
     </div>
 
     <div class="container">
-
-
 
         <div class="form" >
 
@@ -146,8 +99,6 @@
                 </div>
             </div>
 
-
-
             <div class="row justify-content-center">
                 <div class="col-10 subtitle">
                     <h3>Objetivo</h3>
@@ -160,8 +111,6 @@
                     <textarea name="objetivo" id="objetivo" class="form-control" rows="4"></textarea>
                 </div>
             </div>
-
-
 
             <div class="row justify-content-center">
                 <div class="col-10 subtitle">
@@ -194,8 +143,6 @@
                 </div>
 
             </div>
-
-
 
              <div class="form-group row">
                 <div class="col-5">
@@ -258,9 +205,7 @@
                      </select>
                  </div>
 
-
             </div>
-
 
             <div class="row ">
                 <div class="col-3">
@@ -330,20 +275,17 @@
                      </select>
                  </div>
 
-
             </div>
-
-
 
             <div class="row justify-content-center">
                 <div class="col-10 subtitle">
-                    <h3>Experiência proficional</h3>
+                    <h3>Experiência profissional</h3>
                 </div>
             </div>
 
             <div class="row ">
                 <div class="col-3">
-                    <h5> Experiencia proficional 1</h5>
+                    <h5> Experiência profissional 1</h5>
                 </div>
             </div>
 
@@ -361,7 +303,7 @@
 
             <div class="row ">
                 <div class="col-3">
-                    <h5> Experiencia proficional 2</h5>
+                    <h5> Experiência profissional 2</h5>
                 </div>
             </div>
 
@@ -383,7 +325,6 @@
                 </div>
             </div>
 
-
             <div class="form-group row justify-content-around">
                 <div class="col-5">
                     <label for="exp3_funcao">Função</label>
@@ -395,22 +336,12 @@
                 </div>
             </div>
 
-
             <div class="row justify-content-center">
-
                     <input type="submit" class="btn btn-success col-4 btn-gerar" value="Gerar Currículo">
-
             </div>
-
-
-
             </form>
-
         </div>
-
-
     </div>
-
 
     <div class="sticky-bottom">
 
@@ -420,12 +351,5 @@
 
     </div>
 
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
